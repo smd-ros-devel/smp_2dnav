@@ -1,0 +1,13 @@
+<launch>
+  <group ns="$(env ROBOT)">
+    <include file="$(find smp_2dnav)/launch/skidsteer/slam_gmapping.launch" />
+
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+      <rosparam file="$(find smp_2dnav)/config/skidsteer/costmap_common_params.yaml" command="load" ns="global_costmap" />
+      <rosparam file="$(find smp_2dnav)/config/skidsteer/costmap_common_params.yaml" command="load" ns="local_costmap" />
+      <rosparam file="$(find smp_2dnav)/config/skidsteer/local_costmap_params.yaml" command="load" />
+      <rosparam file="$(find smp_2dnav)/config/skidsteer/global_costmap_params.yaml" command="load" />
+      <rosparam file="$(find smp_2dnav)/config/skidsteer/base_local_planner_params.yaml" command="load" />
+    </node>
+  </group>
+</launch>

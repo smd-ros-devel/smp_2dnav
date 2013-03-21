@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find smp_bringup)/launch/smp_skidsteer.launch" />
+  <include file="$(find smp_2dnav)/launch/smp_skidsteer/move_base_slam.launch" />
+</launch>

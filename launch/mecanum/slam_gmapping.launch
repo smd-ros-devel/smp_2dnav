@@ -1,0 +1,10 @@
+<launch>
+    <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen">
+        <param name="xmin" value="-10"/>
+        <param name="ymin" value="-10"/>
+        <param name="xmax" value="10"/>
+        <param name="ymax" value="10"/>
+        <param name="base_frame" value="base_footprint"/>
+        <param name="odom_frame" value="odom_combined"/>
+    </node>
+</launch>
