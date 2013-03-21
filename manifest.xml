@@ -9,7 +9,7 @@
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/smp_2dnav</url>
   <depend package="move_base"/>
-  <depend package="slam_gmapping"/>
+  <depend package="gmapping"/>
   <depend package="smp_bringup"/>
 
 </package>
