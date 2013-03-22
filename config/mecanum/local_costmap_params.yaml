@@ -10,3 +10,4 @@ local_costmap:
   resolution: 0.025
   origin_x: 0
   origin_y: 0
+  publish_voxel_map: true
